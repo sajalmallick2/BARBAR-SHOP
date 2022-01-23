@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-BARBAR WEBSITE</title>
+    <style>
+        body{
+            background-color: royalblue;
+        }
+    .container1{
+        background-image: url('banner.jpg');
+        background-size:cover;
+        background-position: center;
+        display: grid;
+        grid-template-areas: 
+        'logo1 logo1 logo1'
+        'para1 para1 para1';
+    }
+    .item2{
+        height:500px;
+    }
+    #logo1{
+        grid-area: logo1;
+        padding-left: 7rem;
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    #para1{
+        grid-area: para1;
+        text-align: center;
+    }
+    #head1{
+        font-size: 4rem;
+        font-weight:bold;
+        color:darkgreen;
+        text-shadow: royalblue 3px 5px;
+    }
+    #head2{
+        color:red;
+        font-size:large;
+        font-weight: bold;
+        border: 2px solid orangered;
+        border-radius: 3px;
+        text-align: center;
+        width:18rem;
+        background-color: yellow;
+        margin:auto;
+    }
+    button{
+       color:white;
+       background-color:saddlebrown;
+       border-radius: 2px;
+       margin-top: 4px;
+    }
+    @media (max-width:900px){
+        .container1{
+        background-image: url('banner.jpg');
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position: center;
+        padding-top: 20rem;
+        display:block;
+        grid-template-areas: 
+        'logo1 logo1 logo1'
+        'para1 para1 para1';
+    } 
+    #head1{
+        font-size: 2rem;
+        font-weight:bold;
+        color:darkgreen;
+        text-shadow: royalblue 1px 2px;
+    }
+    #head2{
+        color:red;
+        font-size:x-small;
+        font-weight: bold;
+        border: 2px solid orangered;
+        border-radius: 3px;
+        text-align: center;
+        width:5rem;
+        background-color: yellow;
+        margin:auto;
+    }
+    #logo1{
+        grid-area: logo1;
+        padding-left: 1rem;
+        padding-top: 2rem;
+        margin-top:2rem;
+        margin-bottom:0.2rem;
+    }
+    }
+    @media (max-width:800px){
+        #head2{
+        color:red;
+        font-size:medium;
+        font-weight: bold;
+        border: 2px solid orangered;
+        border-radius: 3px;
+        text-align: center;
+        width:6rem;
+        background-color: yellow;
+        margin:auto;
+    }
+    }
+    .container2{
+         display: grid;
+         background-color: cornflowerblue;
+        grid-template-columns: 40rem 30rem;
+        grid-column-gap: 10rem;
+        padding-bottom: 2.1rem;
+    }
+    #head3{
+        grid-template: head3;
+        font-size: 2rem;
+        text-align: center;
+        margin: auto;
+        background-color: green;
+        color: whitesmoke;
+        text-shadow: -0.6px -2px orange;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        display: block;
+
+    }
+    #head4{
+        grid-template: head4;
+        font-size:3rem;
+        font-weight: bold;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        margin: auto;
+        display: block;
+        padding-top: 1rem;
+        padding-bottom: 0.2rem;
+        background-color: palegoldenrod;
+        
+    }
+    #item3{
+        grid-template: item3;
+        padding-bottom: 10rem;
+        text-align:left;
+        margin-left: 10rem;
+    }
+    #item4{
+        grid-template: item4;
+         width:50rem;
+         padding-top: 4rem;
+         border-radius: 6px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container1">
+       <div class="item1" id="logo1">
+         <img src="logo.png" alt="Logo">
+       </div>
+       <div class="item2" id="para1">
+          <p id="head1">Hair Studio</p>
+          <p id="head2">Style Your Hair Style Your Life</p>
+          <button>FIND-OUT</button>
+          <button>READ MORE</button>
+       </div>
+    </div>
+    <div >
+     <div>
+        <h3 id="head3">Features</h3>
+        <p id="head4">Why Choose Us</p>
+     </div>
+    </div>
+    <div class="container2">
+     <div id="item3">
+         <h3>EXPERIENCES STAFF</h3>
+         <p>&#9745 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nisi necessitatibus sequi molestias quisquam facere saepe rerum architecto nesciunt.</p>
+         <h3>PRE-BOOKING-ONLINE</h3>
+         <p>&#9745 Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+         <h3>AFFORDABLE-COST</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+     </div>
+     <div id="item4">
+        <img src="barber-man.jpg" alt="cutting" height="300px" >
+     </div>
+    </div>
+</body>
+</html>
